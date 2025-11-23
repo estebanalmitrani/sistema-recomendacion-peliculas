@@ -100,3 +100,5 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 - Comunidad de Data Science por recursos y tutoriales
 
 ---
+
+*****Proyecto desarrollado en 2025*****
