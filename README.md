@@ -54,6 +54,21 @@ sistema-recomendacion-peliculas/
 - Python 3.8 o superior
 - pip
 
+## 🧪 Testing
+
+Para probar el sistema de recomendación:
+```python
+# En notebooks/03_modelo_recomendacion.ipynb
+# Ejecutar todas las celdas para ver ejemplos de recomendaciones
+```
+
+## 📈 Métricas del Modelo
+
+- **Algoritmo:** Item-Based Collaborative Filtering
+- **Similitud:** Cosine Similarity
+- **Películas procesadas:** 939
+- **Cobertura:** ~56% del catálogo original
+
 ### Pasos
 
 1. Clonar el repositorio:
@@ -71,16 +86,56 @@ pip install -r requirements.txt
 
 3. Descargar el dataset MovieLens 100K y colocarlo en `data/raw/`
 
-## 📈 Roadmap
+## 📈 Resultados
 
-- [X] Setup del proyecto y repositorio
-- [X] Estructura de carpetas
-- [ ] Análisis exploratorio de datos (EDA)
-- [ ] Limpieza y preparación de datos
-- [ ] Implementación del modelo de recomendación
-- [ ] Desarrollo de la interfaz web
-- [ ] Testing y validación
-- [ ] Documentación completa
+### Análisis Exploratorio
+- ✅ 100,000 calificaciones analizadas
+- ✅ 1,682 películas en el catálogo
+- ✅ 943 usuarios en el dataset
+- ✅ Calificación promedio: 3.5/5
+- ✅ Dataset limpiado y preparado
+
+### Modelo de Recomendación
+- ✅ Algoritmo: Item-Based Collaborative Filtering
+- ✅ Matriz de similitud: 939 películas
+- ✅ Sistema de recomendación funcional
+
+### Aplicación Web
+- ✅ Interfaz interactiva con Streamlit
+- ✅ Selector de películas favoritas
+- ✅ Recomendaciones personalizadas en tiempo real
+- ✅ Visualización de scores de similitud
+
+## 🚀 Cómo Usar la Aplicación
+
+### Ejecutar la app:
+```bash
+cd src
+streamlit run app.py
+```
+
+### Usar el sistema:
+1. Selecciona tus películas favoritas del menú desplegable
+2. Click en "Obtener Recomendaciones"
+3. Explora las películas recomendadas con su porcentaje de match
+
+## 📊 Capturas de Pantalla
+
+### Interfaz Principal
+![Interfaz](images/sprint3_interfaz_principal.png)
+
+### Recomendaciones
+![Recomendaciones](images/sprint3_recomendaciones.png)
+
+## 🎓 Metodología
+
+Este proyecto fue desarrollado siguiendo metodología ágil:
+- **Sprint 1:** Análisis y limpieza de datos
+- **Sprint 2:** Desarrollo del modelo de ML
+- **Sprint 3:** Creación de interfaz web
+- **Sprint 4:** Documentación y presentación
+
+Gestión del proyecto realizada con Notion (Kanban board).
 
 ## 👤 Autor
 
@@ -101,4 +156,3 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ---
 
-*****Proyecto desarrollado en 2025*****
